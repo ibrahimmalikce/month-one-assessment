@@ -1,0 +1,9 @@
+# Copy this file to terraform.tfvars and fill in your actual values
+# DO NOT commit terraform.tfvars to GitHub - it contains sensitive data
+
+region                = "eu-west-1"
+instance_type_web     = "t3.micro"
+instance_type_bastion = "t3.micro"
+instance_type_db      = "t3.small"
+key_pair_name         = "techcorp-key"
+my_ip                 = "102.88.54.225"

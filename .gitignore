@@ -1,0 +1,5 @@
+# Never commit real variable values to GitHub
+terraform.tfvars
+*.tfstate
+*.tfstate.backup
+.terraform/

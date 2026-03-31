@@ -28,3 +28,23 @@ and a PostgreSQL database server.
 ```bash
 git clone https://github.com/ibrahimmalikce/month-one-assessment.git
 cd month-one-assessment
+2. Terraform Files (code)
+	∙	main.tf — all your AWS resources
+	∙	variables.tf — all variable declarations
+	∙	outputs.tf — VPC ID, ALB DNS, Bastion IP
+	∙	terraform.tfvars.example — example values, no sensitive data
+3. User Data Scripts
+	∙	user_data/web_server_setup.sh — installs Apache + HTML page showing instance ID
+	∙	user_data/db_server_setup.sh — installs and configures PostgreSQL
+4. Screenshots (evidence/ folder)
+	∙	Terraform plan output
+	∙	Terraform apply completion
+	∙	AWS Console showing all created resources
+	∙	ALB URL serving web pages from both instances (must show the URL in the screenshot)
+	∙	SSH into Bastion host
+	∙	SSH from Bastion into Web servers
+	∙	SSH from Bastion into DB server
+	∙	Connected to PostgreSQL on the DB server
+5. Terraform State File
+	∙	terraform.tfstate — exported after apply, no sensitive data exposed
+6. terraform destroy 
